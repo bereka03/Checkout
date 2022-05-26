@@ -1,0 +1,30 @@
+$bgColor: #FFFFFF;
+$titleColor: #4E5150;
+$subtitleColor: #333333;
+$inputTextColor: #828282;
+$inputLabelColor: #4F4F4F;
+%inputFont {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $inputTextColor;
+}
+%titleFont {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: $titleColor;
+    transform: rotate(-0.02deg);
+}
+%subtitleFont {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $subtitleColor;
+}

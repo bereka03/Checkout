@@ -1,0 +1,69 @@
+@import './config.scss';
+body {
+    background-color: $bgColor;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+}
+h1 {
+    @extend %titleFont;
+}
+h3 {
+    @extend %subtitleFont;
+}
+.container {
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header{
+    h1 {
+        margin: 64px 0 50px 0;
+    }
+}
+.leftside {
+    h3 {
+        margin-bottom: 14px;
+    }
+}
+.main-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.leftside {
+    input {padding: 18px 0px 18px 50px;}
+}
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+.input-wrapper label {
+    color: $inputLabelColor;
+}
+.icon {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 10px;
+    color: $inputTextColor;
+}
+.different {
+    display: flex;
+    flex-direction: row;
+}
+.input-wrapper {
+    select {
+        padding: 18px 0px 18px 50px;
+    }
+}
+.different {
+    .input-wrapper {
+        i {
+            position: absolute;
+            margin-top: 37px;
+            margin-left: 10px;
+            color: $inputTextColor;
+        }
+    }
+}

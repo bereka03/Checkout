@@ -1,0 +1,98 @@
+h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4E5150;
+  -webkit-transform: rotate(-0.02deg);
+          transform: rotate(-0.02deg);
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.container {
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 64px 0 50px 0;
+}
+
+.leftside h3 {
+  margin-bottom: 14px;
+}
+
+.main-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.leftside input {
+  padding: 18px 0px 18px 50px;
+}
+
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+.input-wrapper label {
+  color: #4F4F4F;
+}
+
+.icon {
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 10px;
+  color: #828282;
+}
+
+.different {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.input-wrapper select {
+  padding: 18px 0px 18px 50px;
+}
+
+.different .input-wrapper i {
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 10px;
+  color: #828282;
+}
+/*# sourceMappingURL=style.css.map */

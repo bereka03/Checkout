@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <h1>Checkout</h1>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="main-inner">
+                <div class="leftside">
+                    <div class="contact-information">
+                        <h3>Contact information</h3>
+                        <div class="input-wrapper">
+                            <i class="material-icons icon">email</i>
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="Enter your Email" required id="email">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phone-num">Phone</label>
+                            <i class="material-icons icon">phone</i>
+                            <input type="tel" placeholder="Enter your phone" required id="phone-num">
+                        </div>
+                    </div>
+                    <div class="shipping-info">
+                        <h3>Shipping address</h3>
+                        <div class="input-wrapper">
+                            <label for="full-name">Full name</label>
+                            <i class="material-icons icon">account_circle</i>
+                            <input type="text" value="Rodney Cotton" required id="full-name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="home">Address</label>
+                            <i class="material-icons icon">home</i>
+                            <input type="text" placeholder="Enter your address" required id="home-address">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="city">City</label>
+                            <i class="material-icons icon">apartment</i>
+                            <input type="text" placeholder="Your city" required id="city">
+                        </div>
+                        <div class="different">
+                            <div class="input-wrapper">
+                                <label for="country">Country</label>
+                            <!-- <i class="material-icons icon">apartment</i> -->
+                                <select name="country" id="country">
+                                    <option value="Georgia">Your Country...</option>
+                                    <option value="volvo">Georgia</option>
+                                </select>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="postal-code">Zip Code</label>
+                                <i class="material-icons">markunread_mailbox</i>
+                                <input type="number" placeholder="Your postal code...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
