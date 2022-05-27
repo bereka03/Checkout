@@ -3,6 +3,9 @@ $titleColor: #4E5150;
 $subtitleColor: #333333;
 $inputTextColor: #828282;
 $inputLabelColor: #4F4F4F;
+$buttonColor: #F2994A;
+$itemsBgColor: #F2F2F2;
+$lineColor: #BDBDBD;
 %inputFont {
     font-family: 'Montserrat';
     font-style: normal;
@@ -18,7 +21,6 @@ $inputLabelColor: #4F4F4F;
     font-size: 36px;
     line-height: 44px;
     color: $titleColor;
-    transform: rotate(-0.02deg);
 }
 %subtitleFont {
     font-family: 'Montserrat';
@@ -27,4 +29,22 @@ $inputLabelColor: #4F4F4F;
     font-size: 18px;
     line-height: 22px;
     color: $subtitleColor;
+}
+%inputLabelFont {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+%spanPrice {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
 }

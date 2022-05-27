@@ -8,7 +8,11 @@ body {
 h1 {
     @extend %titleFont;
 }
-h3 {
+h4 {
+    @extend %inputFont;
+    color: $titleColor;
+}
+legend {
     @extend %subtitleFont;
 }
 .container {
@@ -22,16 +26,24 @@ header{
     }
 }
 .leftside {
-    h3 {
+    display: inline-block;
+}
+.leftside {
+    legend {
         margin-bottom: 14px;
     }
 }
-.main-inner {
-    display: flex;
-    justify-content: space-between;
-}
+// .main-inner {
+//     display: flex;
+//     justify-content: space-between;
+// }
 .leftside {
-    input {padding: 18px 0px 18px 50px;}
+    input {
+        padding: 18px 0px 18px 50px;
+        border: 1px solid $inputTextColor;
+        border-radius: 12px;
+        outline: none;
+    }
 }
 .input-wrapper {
     display: flex;
@@ -39,31 +51,127 @@ header{
     gap: 5px;
     margin-bottom: 50px;
 }
-.input-wrapper label {
-    color: $inputLabelColor;
+.input-wrapper{
+    label {
+        @extend %inputLabelFont;
+        color: $inputLabelColor;
+    }
 }
 .icon {
     position: absolute;
-    margin-top: 37px;
+    margin-top: 35px;
     margin-left: 10px;
     color: $inputTextColor;
 }
-.different {
-    display: flex;
-    flex-direction: row;
-}
 .input-wrapper {
     select {
-        padding: 18px 0px 18px 50px;
+        padding: 17px 0px 18px 50px;
+        border-radius: 12px;
+        outline: none;
     }
 }
 .different {
+    @extend %flex-row;
+    gap: 31px;
     .input-wrapper {
+        margin-bottom: 0;
+        width: 217px;
         i {
             position: absolute;
-            margin-top: 37px;
+            margin-top: 35px;
             margin-left: 10px;
             color: $inputTextColor;
         }
     }
 }
+.input-wrapper {
+    &.checkbox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+input[type=checkbox] {
+    -webkit-appearance:checkbox;
+}
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    button {
+        background-color: $buttonColor;
+        padding: 17px 45px;
+        border-radius: 12px;
+        border: none;
+        color: $bgColor;
+    }
+}
+.rightside {
+    padding: 33px 26px 14px 29px;
+    background-color: $itemsBgColor;
+    border-radius: 12px;
+    max-width: 400px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+}
+.item-wrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.item-wrapper:nth-child(1) {
+    margin-bottom: 31px;
+}
+.img-wrapper {
+    max-width: 175px;
+    max-height: 135px;
+}
+.item {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+}
+.add-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input[type=number]{
+    max-width: 132px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid $inputTextColor;
+    outline: none;
+    background-color: $itemsBgColor;
+}
+.prices-wrapper {
+    h4 {
+        margin-bottom: 8px;
+    }
+}
+.price:nth-child(2) {
+    @extend %inputFont;
+    color: $buttonColor;
+}
+.price:nth-child(3) {
+    @extend %inputLabelFont;
+}
+.line {
+    border: 1px solid $lineColor;
+}
+.line:nth-child(2) {
+    margin-bottom: 15px;
+}
+.shipping-wrapper, .total-wrapper {
+    @extend %flex-row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.total-price, .shipping-price{
+    @extend %spanPrice;
+}
+
+

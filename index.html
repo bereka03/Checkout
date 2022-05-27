@@ -21,22 +21,65 @@
     <section class="main">
         <div class="container">
             <div class="main-inner">
-                <div class="leftside">
-                    <div class="contact-information">
-                        <h3>Contact information</h3>
-                        <div class="input-wrapper">
-                            <i class="material-icons icon">email</i>
-                            <label for="email">E-mail</label>
-                            <input type="email" placeholder="Enter your Email" required id="email">
+                <div class="rightside">
+                    <div class="items-wrapper">
+                        <div class="item-wrapper">
+                            <div class="img-wrapper">
+                                <img src="./img/photo1.png" alt="Levi shoes" class="item">
+                            </div>
+                            <div class="add-wrapper">
+                                <div class="prices-wrapper">
+                                    <h4>Vintage backbag</h4>
+                                    <span class="price">$54.99</span>
+                                    <span class="price"><s>$94.99</s></span>
+                                </div>
+                                <input type="number" value="1">
+                            </div>
                         </div>
-                        <div class="input-wrapper">
-                            <label for="phone-num">Phone</label>
-                            <i class="material-icons icon">phone</i>
-                            <input type="tel" placeholder="Enter your phone" required id="phone-num">
+                        <div class="item-wrapper">
+                            <div class="img-wrapper">
+                                <img src="./img/photo2.png" alt="Levi shoes" class="item">
+                            </div>
+                            <div class="add-wrapper">
+                                <div class="prices-wrapper">
+                                    <h4>Vintage backbag</h4>
+                                    <span class="price">$54.99</span>
+                                    <span class="price"><s>$94.99</s></span>
+                                </div>
+                                <input type="number" value="1">
+                            </div>
                         </div>
                     </div>
-                    <div class="shipping-info">
-                        <h3>Shipping address</h3>
+                    <div class="checkout-wrapper">
+                        <div class="line"></div>
+                        <div class="shipping-wrapper">
+                            <h3>Shipping</h3>
+                            <span class="shipping-price">19$</span>
+                        </div>
+                        <div class="line"></div>
+                        <div class="total-wrapper">
+                            <h3>Total</h3>
+                            <span class="total-price"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="leftside">
+                    <form action="/action_page.php" method="post" class="contact-information">
+                        <fieldset>
+                            <legend>Contact information</legend>
+                            <div class="input-wrapper">
+                                <i class="material-icons icon">email</i>
+                                <label for="email">E-mail</label>
+                                <input type="email" placeholder="Enter your Email" required id="email">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone-num">Phone</label>
+                                <i class="material-icons icon">phone</i>
+                                <input type="tel" placeholder="Enter your phone" required id="phone-num">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Shipping address</legend>
                         <div class="input-wrapper">
                             <label for="full-name">Full name</label>
                             <i class="material-icons icon">account_circle</i>
@@ -55,18 +98,26 @@
                         <div class="different">
                             <div class="input-wrapper">
                                 <label for="country">Country</label>
-                            <!-- <i class="material-icons icon">apartment</i> -->
+                            <i class="material-icons icon">location_pin</i>
                                 <select name="country" id="country">
-                                    <option value="Georgia">Your Country...</option>
+                                    <option value="Georgia">Your Country</option>
                                     <option value="volvo">Georgia</option>
                                 </select>
                             </div>
                             <div class="input-wrapper">
                                 <label for="postal-code">Zip Code</label>
                                 <i class="material-icons">markunread_mailbox</i>
-                                <input type="number" placeholder="Your postal code...">
+                                <input type="text" placeholder="Your postal code">
                             </div>
                         </div>
+                        <div class="input-wrapper checkbox">
+                            <input type="checkbox" name="save" id="save">
+                            <label for="save">Save this information for next time</label>
+                        </div>
+                        <div class="button-wrapper">
+                            <button type="submit">Continue</button>
+                        </div>
+                        </fieldset>
                     </div>
                 </div>
             </div>
