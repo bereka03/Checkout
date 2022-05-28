@@ -173,11 +173,58 @@ input[type=number]{
     .main-inner {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .rightside {
         float: none;
         margin: 0;
         margin-bottom: 39px;
-        max-width: 100%;
+        width: 100%;
+        max-width: none;
+    }
+    .leftside {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        padding: 0 10px;
+    }
+    h1 {
+        @include title_font_mixin();
+    }
+    h4 {
+        @include item_title_mixin();
+    }
+    .rightside {
+        padding: 20px 10px;
+        width: 100%;
+    }
+    .img-wrapper {
+        min-width: 100px;
+    }
+    .price:nth-child(2){
+        @include price_font_mixin();
+    }
+    .price:nth-child(3) {
+        @include old_price_mixin();
+    }
+    input[type=number]{
+        max-width: 122px;
+    }
+    legend {
+        @include legend_mixin();
+    }
+    input {
+        @include input_mixin();
+    }
+    .different {
+        gap: 5px;
+        justify-content: center;
+        // padding: 0 10px;
+        .input-wrapper {
+            width: 100%;
+        }
     }
 }

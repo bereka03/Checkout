@@ -52,3 +52,31 @@ $lineColor: #BDBDBD;
     font-size: 14px;
     line-height: 17px;
 }
+%responsiveTitleFont {
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin title_font_mixin() {
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin item_title_mixin() {
+    font-size: 12px;
+    line-height: 15px;
+}
+@mixin price_font_mixin() {
+    font-size: 14px;
+    line-height: 17px;
+}
+@mixin old_price_mixin() {
+    font-size: 10px;
+    line-height: 12px;
+}
+@mixin legend_mixin() {
+    font-size: 14px;
+    line-height: 17px;  
+}
+@mixin input_mixin() {
+    font-size: 12px;
+    line-height: 15px;
+}
