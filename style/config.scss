@@ -41,6 +41,10 @@ $lineColor: #BDBDBD;
     display: flex;
     flex-direction: row;
 }
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
 %spanPrice {
     font-family: 'Montserrat';
     font-style: normal;

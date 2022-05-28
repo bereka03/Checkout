@@ -33,7 +33,7 @@ legend {
   line-height: 15px;
 }
 
-.different, .shipping-wrapper, .total-wrapper {
+.different, .input-wrapper.checkbox, .button-wrapper, .item-wrapper, .shipping-wrapper, .total-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +41,16 @@ legend {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.input-wrapper, .rightside, .add-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .total-price, .shipping-price {
@@ -88,13 +98,6 @@ header h1 {
 }
 
 .input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 5px;
   margin-bottom: 50px;
 }
@@ -133,13 +136,6 @@ header h1 {
 }
 
 .input-wrapper.checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -151,9 +147,6 @@ input[type=checkbox] {
 }
 
 .button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -173,20 +166,10 @@ input[type=checkbox] {
   border-radius: 12px;
   max-width: 400px;
   float: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 95px;
 }
 
 .item-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 20px;
@@ -208,13 +191,6 @@ input[type=checkbox] {
 }
 
 .add-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -251,5 +227,27 @@ input[type=number] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .main-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rightside {
+    float: none;
+    margin: 0;
+    margin-bottom: 39px;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
