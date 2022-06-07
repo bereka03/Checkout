@@ -63,6 +63,9 @@ header{
         padding: 17px 0px 18px 50px;
         border-radius: 12px;
         outline: none;
+        // -moz-appearance:none; /* Firefox */
+        // -webkit-appearance:none; /* Safari and Chrome */
+        // appearance: none;
     }
 }
 .different {
@@ -131,8 +134,8 @@ input[type=checkbox] {
     justify-content: space-between;
 }
 input[type=number]{
-    max-width: 132px;
-    padding: 15px;
+    width: 100%;
+    padding: 15px 0;
     text-align: center;
     border-radius: 12px;
     border: 1px solid $inputTextColor;
@@ -164,6 +167,13 @@ input[type=number]{
 }
 .total-price, .shipping-price{
     @extend %spanPrice;
+}
+footer p {
+    margin-top: 160px;
+    margin-bottom: 24px;
+    text-align: center;
+    @extend %spanPrice;
+    color: $lineColor;
 }
 @media only screen and(max-width: 1050px) {
     .container {
@@ -210,9 +220,6 @@ input[type=number]{
     .price:nth-child(3) {
         @include old_price_mixin();
     }
-    input[type=number]{
-        max-width: 122px;
-    }
     legend {
         @include legend_mixin();
     }
@@ -225,6 +232,19 @@ input[type=number]{
         // padding: 0 10px;
         .input-wrapper {
             width: 100%;
+        }
+    }
+    fieldset {
+        min-width: 100%;
+    }
+    .different {
+        select {
+            width: 100%;
+            padding-left: 30px;
+        }
+        input {
+            width: 100%;
+            padding-left: 40px;
         }
     }
 }
