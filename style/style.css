@@ -156,8 +156,16 @@ input[type=checkbox] {
   background-color: #F2994A;
   padding: 17px 45px;
   border-radius: 12px;
-  border: none;
+  border: 1px solid transparent;
   color: #FFFFFF;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.button-wrapper button:hover {
+  background-color: #ffffff;
+  border: 1px solid #F2994A;
+  color: #F2994A;
 }
 
 .rightside {

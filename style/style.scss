@@ -99,8 +99,14 @@ input[type=checkbox] {
         background-color: $buttonColor;
         padding: 17px 45px;
         border-radius: 12px;
-        border: none;
+        border: 1px solid transparent;
         color: $bgColor;
+        transition: all 0.4s;
+    }
+    button:hover{
+        background-color: $buttonHover;
+        border: 1px solid $buttonColor;
+        color: $buttonColor;
     }
 }
 .rightside {
