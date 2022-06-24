@@ -140,13 +140,54 @@ input[type=checkbox] {
     justify-content: space-between;
 }
 input[type=number]{
-    width: 100%;
     padding: 15px 0;
     text-align: center;
     border-radius: 12px;
     border: 1px solid $inputTextColor;
     outline: none;
     background-color: $itemsBgColor;
+    margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+.num-input-wrapper {
+    @extend %flex-row;
+    align-items: center;
+    .remove {
+        position: relative;
+        left:35px;
+        color: $inputTextColor;
+        background-color: #E0E0E0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .add {
+        position: relative;
+        right: 35px;
+        color: $inputTextColor;
+        background-color: #E0E0E0;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .add:hover {
+        background-color: onhover();
+    }
+    .remove:hover {
+        background-color: onhover();
+    }
+}
+.total-price::before {
+    content: '$';
 }
 .prices-wrapper {
     h4 {

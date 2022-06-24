@@ -81,3 +81,7 @@ $lineColor: #BDBDBD;
     font-size: 12px;
     line-height: 15px;
 }
+
+@function onhover() {
+    @return $lineColor;
+}
