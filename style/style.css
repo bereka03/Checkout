@@ -82,6 +82,27 @@ header h1 {
   margin: 64px 0 50px 0;
 }
 
+.line1 {
+  position: relative;
+  bottom: 2.8em;
+  width: 0;
+  height: 2px;
+  background-color: #4E5150;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  visibility: hidden;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a:hover ~ .line1 {
+  visibility: visible;
+  width: 100%;
+}
+
 .leftside {
   display: inline-block;
 }
@@ -228,6 +249,8 @@ input[type=number] {
 }
 
 .num-input-wrapper {
+  position: relative;
+  right: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -380,6 +403,18 @@ footer p {
   .different input {
     width: 100%;
     padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .item-wrapper {
+    gap: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .num-input {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

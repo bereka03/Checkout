@@ -25,6 +25,22 @@ header{
         margin: 64px 0 50px 0;
     }
 }
+.line1 {
+    position: relative;
+    bottom: 2.8em;
+    width: 0;
+    height: 2px;
+    background-color: $titleColor;
+    transition: all 0.3s;
+    visibility: hidden;
+}
+a {
+    transition: all 0.3s;
+}
+a:hover ~ .line1 {
+    visibility: visible;
+    width: 100%;
+}
 .leftside {
     display: inline-block;
 }
@@ -159,6 +175,8 @@ input[type=number] {
     margin: 0; 
 }
 .num-input-wrapper {
+    position: relative;
+    right: 20px;
     @extend %flex-row;
     align-items: center;
     .remove {
@@ -293,5 +311,14 @@ footer p {
             width: 100%;
             padding-left: 40px;
         }
+    }
+}
+@media only screen and (max-width: 350px) {
+    .item-wrapper {
+        gap: 20px;
+        justify-content: flex-start;
+    }
+    .num-input {
+        width: 100px;
     }
 }
